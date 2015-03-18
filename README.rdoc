@@ -2,6 +2,7 @@
 
 Test case for ranked model ordering.
 
-Steps to reproduce within seeds.rb
+Steps to reproduce within seeds.rb.
 
-When calling create on a model with an attribute item_ids initially the items will be ordered correctly. However there's a secondary save that is called which incorrectly doesn't update the ordering of items where the initial value would have been 8388607.
+bundle install
+bundle exec db:setup
